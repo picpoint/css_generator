@@ -31,6 +31,37 @@
 	<div class="bra numberdiv"></div>
 </div>
 
+
+<div class="params">
+	<label for="chk">
+		<input type="checkbox" id="chk" checked>
+		<span>Тень</span>
+	</label>
+
+	<span>Смещение по ширине</span>
+	<input type="range" min="0" max="100" step="1" id="sdw_width" value="0">
+
+	<span>Смещение по высоте</span>
+	<input type="range" min="0" max="100" step="1" id="sdw_height" value="0">
+
+	<span>Радиус размытия</span>
+	<input type="range" min="0" max="100" step="1" id="sdw_radius" value="0">
+
+	<span>Растяжение</span>
+	<input type="range" min="0" max="100" step="1" id="sdw_streach" value="0">
+
+	<span>Цвет</span>
+	<input type="color" id="brush" name="brushcolor">
+</div>
+
+<div class="params">
+	<span>Обводка</span>
+	<input type="range" min="0" max="100" step="1" id="brdpix" value="0">
+	<input type="color" id="brdcolor">
+</div>
+
+
+
 <div class="result"></div>
 
 <script src="script.js"></script>
