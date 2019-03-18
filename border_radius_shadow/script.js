@@ -98,4 +98,18 @@ brdcolor.addEventListener('input', borderResult);
 
 // ФУНКЦИОНАЛ ОБВОДКИ END
 
-//----------------------------------------------------------------------------
+//--------------------------------------------------------------------------m--
+
+
+// переменная txtsize - доступ к тексту внутри блока
+var txtsize = document.querySelector('.txtsize');
+// range_size - доступ к скролу для увеличения шрифта
+var range_size = document.getElementById('range_size');
+
+// ф-ия для считывания значений и увеличения шрифта
+function sizeText() {
+    txtsize.style.fontSize = range_size.value + 'rem';
+}
+
+// событие на скроле
+range_size.addEventListener('input', sizeText);
